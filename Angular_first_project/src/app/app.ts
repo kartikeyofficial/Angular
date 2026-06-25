@@ -16,4 +16,7 @@ export class App {
   getNumber(a:number,b:number){
       return a+b;
   }
+  callMe(){
+    prompt('Enter Your Name:');
+  }
 }
