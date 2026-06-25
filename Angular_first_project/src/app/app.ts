@@ -19,4 +19,13 @@ export class App {
   callMe(){
     prompt('Enter Your Name:');
   }
+  count = 0;
+  counter(action:string){
+    if(action=='minus'){
+    this.count>0 && this.count--
+    }
+    else{
+      this.count++;
+    }
+  }
 }

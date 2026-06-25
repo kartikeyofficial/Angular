@@ -4,4 +4,6 @@
 <h1>{{sum}}</h1>
 <h1>{{getNumber(10,30)}}</h1> 
 <login></login>
-<button (click)="callMe()">Click Me</button>
+<button (click)="counter('minus')">Counter--</button>
+<span>{{count}}</span>
+<button class="plus" (click)="counter('plus')">Counter++</button>
