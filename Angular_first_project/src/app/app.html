@@ -7,3 +7,10 @@
 <button (click)="counter('minus')">Counter--</button>
 <span>{{count}}</span>
 <button class="plus" (click)="counter('plus')">Counter++</button>
+<input type="text" (change)="handleEvent($event.type)">
+<select name="" (blur)="handleEvent($event.type)" id="">
+  <option value="">Car</option>
+  <option value="">Bike</option>
+  <option value="">Mobile</option>
+</select>
+<input type="text" (focus)="handleEvent($event.type)">

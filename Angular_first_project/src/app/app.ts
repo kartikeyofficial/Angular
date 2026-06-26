@@ -28,4 +28,8 @@ export class App {
       this.count++;
     }
   }
+  handleEvent(eventName:string){
+     console.log(eventName);
+     
+  }
 }
