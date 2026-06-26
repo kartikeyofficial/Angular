@@ -27,5 +27,6 @@ export class App {
     console.log(event);
     
   }
+  console.log("Function & Events");
 
 }
