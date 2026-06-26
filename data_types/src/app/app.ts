@@ -23,7 +23,7 @@ export class App {
     return num1+num2;
   }
 
-  handleEvent(event:PointerEvent){
+  handleEvent(event:PointerEvent |Event){
     console.log(event);
     
   }
