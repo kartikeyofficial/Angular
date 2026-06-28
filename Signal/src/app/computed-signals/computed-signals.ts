@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
+
+
 
 @Component({
   selector: 'computed-signals',
@@ -6,4 +8,14 @@ import { Component } from '@angular/core';
   templateUrl: './computed-signals.html',
   styleUrl: './computed-signals.css',
 })
-export class ComputedSignals {}
+export class ComputedSignals {
+  height = signal(100);
+  width = signal(20);
+  area = computed(()=>this.height()*this.width()
+  )
+
+  handleHeight(){
+    this.height.set(this.height()+10);
+   
+  }
+}
