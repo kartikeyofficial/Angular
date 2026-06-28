@@ -1,10 +1,11 @@
 import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ComputedSignals } from './computed-signals/computed-signals';
+import { Effect } from './effect/effect';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals],
+  imports: [RouterOutlet,ComputedSignals,Effect],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
