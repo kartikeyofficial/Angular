@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, effect, signal } from '@angular/core';
 
 
 
@@ -13,6 +13,12 @@ export class ComputedSignals {
   width = signal(20);
   area = computed(()=>this.height()*this.width()
   )
+  constructor(){
+    effect(()=>{
+      console.log("Area is: ",this.area());
+      
+    })
+  }
 
   handleHeight(){
     this.height.set(this.height()+10);
