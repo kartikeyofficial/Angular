@@ -4,12 +4,13 @@ import { ComputedSignals } from './computed-signals/computed-signals';
 import { Effect } from './effect/effect';
 import { SignalDataTypes } from './signal-data-types/signal-data-types';
 import { CounterApp } from './counter-app/counter-app';
+import { ControlFlowStatemets } from './control-flow-statemets/control-flow-statemets';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp],
+  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl:"./app.css"
 })
 export class App {
  data = 10;
