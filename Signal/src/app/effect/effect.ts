@@ -21,6 +21,11 @@ constructor(){
     if(this.speed()>=120 && this.speed()<160){
       this.color='red';
     }
+    if(this.speed()>=160){
+      this.speed.set(0);
+      this.color='black';
+
+    }
     console.log("Speed: ",this.speed());
     
   })

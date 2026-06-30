@@ -2,10 +2,12 @@ import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ComputedSignals } from './computed-signals/computed-signals';
 import { Effect } from './effect/effect';
+import { SignalDataTypes } from './signal-data-types/signal-data-types';
+import { CounterApp } from './counter-app/counter-app';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals,Effect],
+  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
