@@ -1,2 +1,12 @@
 <hr>
-<h1>control-flow-statemets works!</h1>
+<h1>Control Flow Statement</h1>
+<div>
+  @if (isLogin()){
+    <span>Welcome User</span>
+    <button (click)="handleLogin(false)">Log Out</button>
+  }
+  @else{
+    <span>Please Login</span>
+    <button (click)="handleLogin(true)">Login</button>
+  }
+</div>

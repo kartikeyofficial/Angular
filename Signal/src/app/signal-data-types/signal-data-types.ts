@@ -4,7 +4,7 @@ import { Component, computed, Signal, signal, WritableSignal } from '@angular/co
   selector: 'signal-data-types',
   imports: [],
   templateUrl: './signal-data-types.html',
-  styleUrl: './signal-data-types.css',
+  styleUrls: ['./signal-data-types.css','../effect/effect.css']
 })
 export class SignalDataTypes {
   data:WritableSignal<string|number|boolean> = signal("Kartikey"); // Signal Data Type

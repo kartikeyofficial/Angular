@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Effect } from '../effect/effect';
 
 @Component({
@@ -7,4 +7,12 @@ import { Effect } from '../effect/effect';
   templateUrl: './control-flow-statemets.html',
   styleUrl: './control-flow-statemets.css',
 })
-export class ControlFlowStatemets {}
+export class ControlFlowStatemets {
+  isLogin = signal(true);
+
+
+  handleLogin(status:boolean){
+    this.isLogin.set(status)
+    
+  }
+}
