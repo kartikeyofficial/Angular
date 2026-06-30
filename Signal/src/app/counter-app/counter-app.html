@@ -1,2 +1,13 @@
 <hr>
 <h1>Counter App</h1>
+<div class="counter-card">
+  <h2>Counter App</h2>
+  <div class="count">
+    {{counter()}}
+  </div>
+  <div class="buttons">
+    <button class="minus" (click)="decreament()">-</button>
+    <button (click)="reset()">Reset</button>
+    <button class="plus" (click)="increament()">+</button>
+  </div>
+</div>

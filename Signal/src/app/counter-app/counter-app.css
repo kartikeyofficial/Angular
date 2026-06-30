@@ -6,3 +6,40 @@ h1{
   border-radius: 8px;
   margin-left: 45%;
 }
+.counter-card{
+  margin-left: 40%;     
+  width: 400px;
+  height: 400px;  
+  background-color: #a1cbd9;  
+  border-radius: 10px;
+}
+h2{
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+ 
+}
+.count{
+  font-size: 30px;
+  text-align: center;
+  
+}
+.buttons{
+  padding: 10px;
+ 
+  border-radius: 8px;
+  text-align: center;
+}
+button{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.plus{
+  background-color: #92cf85;
+}
+.minus{
+  background-color: #ce6262;
+}
