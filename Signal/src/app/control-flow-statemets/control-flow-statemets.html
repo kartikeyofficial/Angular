@@ -9,4 +9,40 @@
     <span>Please Login</span>
     <button (click)="handleLogin(true)">Login</button>
   }
+ 
+  
 </div>
+<hr>
+<h1>Toggle</h1>
+@if(show()){
+  <button (click)="show.set(false)">Hide</button>
+}
+@else{
+  <button (click)="show.set(true)">Show</button>
+}
+
+
+<hr>
+<h1>Check Status</h1>
+<select (change)="handleStatus($event)" name="" id="">
+  <option value="notStarted">Not Started</option>
+  <option value="progress">Progress</option>
+  <option value="success">Success</option>
+  <option value="error">Error</option>
+</select>
+<br>
+@if(status()=='notStarted'){
+  <span style="color: black;">No Status</span>
+}
+@else if(status()=='progress'){
+  <span style="color:orange;">Progress</span>
+}
+@else if(status()=='success'){
+  <span style="color: rgb(87, 139, 10);">Success</span>
+}
+@else if(status()=='error'){
+  <span style="color: rgb(231, 51, 51);">Error</span>
+}
+
+
+
