@@ -45,4 +45,25 @@
 }
 
 
+<hr>
+<h1>For Loop</h1>
+<div>
+  <ul>
+    @for(user of users(); track user){
+      <li>{{user}}</li>
+    } 
+  </ul> 
+</div>
+<hr>
+<div>
+<h1>Object Iteration</h1>
+<ul>
+  @for(user of usersDetail(); track user){
+    <li>{{user.name+" "+user.surname+" "+user.email+" "}}</li>
+  }
+</ul>
+
+</div>
+
+
 

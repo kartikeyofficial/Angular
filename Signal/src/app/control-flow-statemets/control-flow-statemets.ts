@@ -21,4 +21,13 @@ export class ControlFlowStatemets {
     let target = event.target as HTMLSelectElement;
     this.status.set(target.value)
   }
+
+  users=signal(["Bhumi","Kartikey","Aman","Anamika","Harshit"])
+
+  usersDetail = signal([
+    {id:1,name:"Kartikey", surname:"Rajput",email:"rajputlartikey10@gmail.com"},
+    {id:2,name:"Bhumi", surname:"Tripathi",email:"bhumikhushi16@gmail.com"},
+    {id:3,name:"Aman", surname:"Kumar",email:"amankumar11@gmail.com"},
+    {id:4,name:"Anamika", surname:"Kumari",email:"anamikakumari13@gmail.com"},
+  ])
 }
