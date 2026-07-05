@@ -1,0 +1,23 @@
+<h1>Switch Case</h1>
+<select (change)="handleSwitch($event)"name="" id="">
+  <option value="notStarted">Not Started</option>
+   <option value="loading">Loading</option>
+    <option value="success">Success</option>
+    <option value="error">Error</option>
+    
+
+</select>
+@switch(status()){
+  @case('notStarted'){
+    <span style="color: orange;">Not Update Yet</span>
+  }
+  @case('loading'){
+    <span style="color: rgb(11, 155, 157);">Loading in Progress</span>
+  }
+  @case('success'){
+    <span style="color: rgb(11, 167, 60);">Success</span>
+  }
+  @default{
+    <span style="color: red;">Error</span>
+  }
+}
