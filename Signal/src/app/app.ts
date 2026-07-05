@@ -7,10 +7,11 @@ import { CounterApp } from './counter-app/counter-app';
 import { ControlFlowStatemets } from './control-flow-statemets/control-flow-statemets';
 import { SwitchCase } from './switch-case/switch-case';
 import { TwoWayDatabinding } from './two-way-databinding/two-way-databinding';
+import { GetterSetter } from './getter-setter/getter-setter';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding],
+  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding,GetterSetter],
   templateUrl: './app.html',
   styleUrl:"./app.css"
 })
