@@ -1,0 +1,9 @@
+<hr>
+<h1>Two Way Data Binding</h1>
+
+<h2>{{name()}}</h2>
+<input type="text" [value]="name()" (input)="name.set($event.target.value)"/>
+
+<br>
+<h2>{{age}}</h2>
+<input type="text" [value]="age" [(ngModel)]="age">

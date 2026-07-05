@@ -6,10 +6,11 @@ import { SignalDataTypes } from './signal-data-types/signal-data-types';
 import { CounterApp } from './counter-app/counter-app';
 import { ControlFlowStatemets } from './control-flow-statemets/control-flow-statemets';
 import { SwitchCase } from './switch-case/switch-case';
+import { TwoWayDatabinding } from './two-way-databinding/two-way-databinding';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase],
+  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding],
   templateUrl: './app.html',
   styleUrl:"./app.css"
 })
