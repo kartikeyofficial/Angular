@@ -8,10 +8,11 @@ import { ControlFlowStatemets } from './control-flow-statemets/control-flow-stat
 import { SwitchCase } from './switch-case/switch-case';
 import { TwoWayDatabinding } from './two-way-databinding/two-way-databinding';
 import { GetterSetter } from './getter-setter/getter-setter';
+import { TodoList } from './todo-list/todo-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding,GetterSetter],
+  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding,GetterSetter,TodoList],
   templateUrl: './app.html',
   styleUrl:"./app.css"
 })
