@@ -20,7 +20,7 @@ export class TodoList {
       [...item,{id:this.tasks().length,title:this.title(),completed:false}]
 
     ))
-     this.title.set('');
+     this.title.set(''); 
     }
    
   }

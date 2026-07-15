@@ -9,10 +9,11 @@ import { SwitchCase } from './switch-case/switch-case';
 import { TwoWayDatabinding } from './two-way-databinding/two-way-databinding';
 import { GetterSetter } from './getter-setter/getter-setter';
 import { TodoList } from './todo-list/todo-list';
+import { SearchBox } from './search-box/search-box';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding,GetterSetter,TodoList],
+  imports: [RouterOutlet,ComputedSignals,Effect,SignalDataTypes,CounterApp,ControlFlowStatemets,SwitchCase,TwoWayDatabinding,GetterSetter,TodoList,SearchBox],
   templateUrl: './app.html',
   styleUrl:"./app.css"
 })
