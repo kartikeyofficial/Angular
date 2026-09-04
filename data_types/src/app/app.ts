@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PropertyBinding } from './property-binding/property-binding';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [PropertyBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -27,5 +28,6 @@ export class App {
     console.log(event);
     
   }
+  
 
 }
