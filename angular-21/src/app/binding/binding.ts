@@ -18,4 +18,7 @@ export class Binding {
       this.count++;
     }
   }
+  handleEvent(eventName:String){
+    console.log(eventName);
+  }
 }
