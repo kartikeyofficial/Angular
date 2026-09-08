@@ -1,0 +1,25 @@
+h1{
+  background-color: #95d3ec;
+  padding: 10px;
+  width: 220px;
+  border-radius: 10px;
+  font-family: Cantarell;
+}
+.button-left{
+  padding: 10px;
+  width: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: coral;
+}
+.button-right{
+  padding: 10px;
+  width: 50px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: coral;
+}
