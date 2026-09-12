@@ -1,0 +1,22 @@
+h1{
+  background-color: #95d3ec;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  font-family: Cantarell;
+}
+button{
+  padding: 10px;
+  width: 150px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #a9dd8e;
+}
+input{
+  margin-top:20px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+}

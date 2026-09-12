@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'property-binding',
+  imports: [],
+  templateUrl: './property-binding.html',
+  styleUrl: './property-binding.css',
+})
+export class PropertyBinding {
+  btnDisable: boolean = false;
+  inputReadOnly = false;
+}
