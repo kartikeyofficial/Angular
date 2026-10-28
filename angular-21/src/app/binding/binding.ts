@@ -21,4 +21,13 @@ export class Binding {
   handleEvent(eventName:String){
     console.log(eventName);
   }
+  data: number|string|boolean = "Kartikey Rajput";
+  updateValue(val:number):number{
+    return (this.data = val);
+  }
+  handledEvent(event:PointerEvent|Event|MouseEvent){
+    console.log(event);
+  }
+
+
 }

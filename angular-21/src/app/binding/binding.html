@@ -19,4 +19,8 @@
 <div (mouseleave)="handleEvent($event.type)" class="div2">
 
 </div>
+<h2>{{data}}</h2>
+<button (click)="updateValue(60)">Update Data</button>
+<button (click)="handledEvent($event)">Click Me</button>
+<input type="text"  (change)="handledEvent($event)">
 
