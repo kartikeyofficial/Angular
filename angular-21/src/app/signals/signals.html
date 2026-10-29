@@ -1,3 +1,11 @@
 <h1>Signals</h1>
-<h2>Interpolation: {{data}}</h2>
-<h2>Signal: {{count()}}</h2>
+<button (click)="updateData()">Update Data</button>
+<h2>{{data}}</h2>
+<button (click)="updateCount()">Update Count</button>
+<h2>{{count()}}</h2>
+
+<h2>Height: {{height()}}</h2>
+<h2>Area: {{area()}}</h2>
+<button (click)="handleHeight()">Update Height</button>
+<h2>{{fruit()}}</h2>
+<button (click)="changeFruit()">Change Fruit</button>
